@@ -1,0 +1,104 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  html, body {
+    height: 100%;
+    margin: 0;
+  }
+
+  main {
+     flex: 1;
+ }
+ 
+ .container {
+    display: grid;
+    grid-template-rows: 1fr auto;
+    min-height: 100vh;
+  }  
+
+  .header, .footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+  }
+  
+  .nav ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .nav ul li {
+    display: inline;
+    margin: 0 15px;
+  }
+  
+  .nav ul li a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  .hero {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #f4f4f4;
+  }
+  
+  .products-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 60px; /* Ajuste conforme necessário */
+  }  
+
+  .featured-products {
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .product-list {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .product-card {
+    border: 1px solid #ddd;
+    padding: 15px;
+    width: 200px;
+  }
+  
+  .product-card button {
+    background-color: #28a745;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .product-card button:hover {
+    background-color: #218838;
+  }
+  
+  footer {
+    padding: 20px; /* Ajusta o valor conforme necessário */
+    margin-top: 40px; /* Adiciona espaço acima do rodapé */
+    background-color: #f8f8f8; /* Exemplo de cor de fundo */
+    text-align: center; /* Centraliza o conteúdo do rodapé */
+  }
+
+  /* Estilo responsivo */
+@media (max-width: 768px) {
+    .products-container {
+      margin-bottom: 30px;
+    }
+  
+    footer {
+      padding: 15px;
+      margin-top: 20px;
+    }
+  }
